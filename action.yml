@@ -1,0 +1,24 @@
+name: 'IFTTT Webhook Action'
+description: 'Send request to ifttt webhook'
+inputs:
+  event:  # id of input
+    description: 'IFTTT webhook event'
+    required: true
+  key:
+     description: 'IFTTT webhook key'
+     required: true
+  value1:
+     description: 'IFTTT webhook optional parameter'
+     required: false
+  value2:
+     description: 'IFTTT webhook optional parameter'
+     required: false
+  value3:
+     description: 'IFTTT webhook optional parameter'
+     required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: "send"
+  color: "blue"
