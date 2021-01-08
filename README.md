@@ -9,7 +9,7 @@ anything you want to trigger a notice at ifttt.
 
 ```yaml
 steps:
-  - uses: actionflow/ifttt-webhook-action@v1
+  - uses: actionsflow/ifttt-webhook-action@v1
     with:
       event: your-webhook-event
       key: your-webhook-secret-key
